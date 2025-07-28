@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { FC } from "react";
 
 import { nasalization } from "@/app/fonts";
-
 import { SELF_DATA } from "@/constant/self";
 
 interface H1ComponentProps {
@@ -18,7 +17,7 @@ const H1_Compoent: FC<H1ComponentProps> = ({ name, y_initialValue }) => {
       initial={{ y: y_initialValue, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
-      className={`text-slate-200 text-4xl ${nasalization.className}`}
+      className={`text-white text-4xl drop-shadow-[0_0_5px_rgba(255,0,0,0.4)] ${nasalization.className}`}
     >
       {name}
     </motion.h1>
@@ -28,19 +27,21 @@ const H1_Compoent: FC<H1ComponentProps> = ({ name, y_initialValue }) => {
 export const Preloader = () => {
   return (
     <div className="overflow-x-hidden w-screen h-screen">
-      <div className="flex items-center justify-center fixed h-full w-full">
+      <div className="flex items-center justify-center fixed h-full w-full bg-black">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1 }}
-          className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"
+          className="absolute inset-0 -z-10 h-full w-full bg-black"
         ></motion.div>
-        <div className="flex justify-center items-center tracking-widest mx-auto container text-2xl text-slate-400">
+
+        <div className="flex justify-center items-center tracking-widest mx-auto container text-2xl text-white gap-2">
           <H1_Compoent name={SELF_DATA.first_name} y_initialValue={100} />
           <motion.span
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
+            className="text-red-600 font-bold"
           >
             /
           </motion.span>

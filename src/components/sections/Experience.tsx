@@ -12,7 +12,7 @@ export const Experience = () => {
       className="relative py-16 bg-gradient-to-b from-black via-zinc-900 to-black overflow-hidden"
     >
       {/* Samurai parchment background overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/textures/samurai-parchment.png')] bg-cover bg-center pointer-events-none z-0" />
+      {/* <div className="absolute inset-0 opacity-10 bg-[url('/textures/samurai-parchment.png')] bg-cover bg-center pointer-events-none z-0" /> */}
 
       <div className="container mx-auto relative z-10">
         <Title title="Experience" />

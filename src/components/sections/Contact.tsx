@@ -24,7 +24,7 @@ export const Contact = () => {
       className="relative py-20 bg-gradient-to-b from-black via-zinc-900 to-black overflow-hidden"
     >
       {/* Samurai texture overlay */}
-      <div className="absolute inset-0 bg-[url('/textures/samurai-parchment.png')] opacity-10 bg-cover bg-center z-0 pointer-events-none" />
+      {/* <div className="absolute inset-0 bg-[url('/textures/samurai-parchment.png')] opacity-10 bg-cover bg-center z-0 pointer-events-none" /> */}
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-10">
         <div className="grid md:grid-cols-2 items-center gap-16 bg-black/50 backdrop-blur-md rounded-xl p-6 sm:p-10 shadow-lg shadow-red-900/40 border border-zinc-800">

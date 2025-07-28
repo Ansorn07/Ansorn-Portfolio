@@ -11,8 +11,8 @@ export const Skills = () => {
       id="skills"
       className="py-16 relative overflow-hidden bg-gradient-to-b from-black via-zinc-900 to-black"
     >
-      {/* Parchment-style background overlay */}
-      <div className="absolute inset-0 opacity-10 bg-[url('/textures/samurai-parchment.png')] bg-cover bg-center pointer-events-none z-0" />
+      {/* Parchment-style background overlay
+      <div className="absolute inset-0 opacity-10 bg-[url('/textures/samurai-parchment.png')] bg-cover bg-center pointer-events-none z-0" /> */}
 
       <div className="container mx-auto relative z-10">
         <Title title="Skills" />
