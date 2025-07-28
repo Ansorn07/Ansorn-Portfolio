@@ -10,9 +10,24 @@ export const PROJECT_DATA = [
   {
     name: "CycloneEye",
     description:
-      "A modern, cyclone-themed weather tracking app featuring real-time cyclone movement, historical data exploration, and location-based alert UI. Built with a dark responsive UI, OpenLayers map, and analytics-ready structure.",
+      "A modern cyclone tracking web app with real-time storm forecasts, historical cyclone data, and location-based alert support. Features an India-themed design and smooth weather visualizations.",
     github_link: "https://github.com/Ansorn07/Cyclone-Eye-Frontend",
     demo: "https://cyclone-eye-frontend.vercel.app/",
-    tech: ["Next.js", "Tailwind CSS", "OpenLayers", "Framer Motion"],
+    tech: ["Next.js 15", "Tailwind CSS", "OpenLayers"],
+  },
+  {
+    name: "Aethera-One",
+    description:
+      "An AI-powered mental health assistant using Gemini AI and Zerepy agents. Supports encrypted, smart-contract-secured therapy sessions, emotional state tracking, NFT progress logs, and a sonic token reward system.",
+    github_link: "https://github.com/Ansorn07/Aethera-One",
+    demo: "", // Add once deployed
+    tech: [
+      "Gemini API",
+      "Zerepy Agents",
+      "Smart Contracts",
+      "Next.js",
+      "Blockchain",
+      "TypeScript",
+    ],
   },
 ];
