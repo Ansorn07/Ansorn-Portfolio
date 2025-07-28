@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global variables */
+:root {
+  --foreground-rgb: 229, 229, 229; /* light gray text */
+  --background-start-rgb: 0, 0, 0;  /* black */
+  --background-end-rgb: 0, 0, 0;    /* black */
+}
+
+/* Reset margins, paddings, and box model */
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar styles */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  border: 2px solid #000000;
+}
+
+/* Main body styling */
+body {
+  font-family: 'nasalization', sans-serif;
+  color: rgb(var(--foreground-rgb));
+  background-color: rgb(var(--background-start-rgb)) !important;
+  background-image: none !important;
+}
+
+/* Custom utility classes */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
