@@ -21,7 +21,7 @@ export const Navbar = ({
       {/* Left: Logo + Name */}
       <div className="flex items-center gap-3">
       <Image
-  src="/images/logo.svg"
+  src="/images/logo.png"
   alt="logo"
   width={40}
   height={40}
