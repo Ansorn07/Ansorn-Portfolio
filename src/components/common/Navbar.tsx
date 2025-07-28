@@ -20,17 +20,19 @@ export const Navbar = ({
     >
       {/* Left: Logo + Name */}
       <div className="flex items-center gap-3">
-        <Image
-          src="/public/images/logo.svg"
-          alt="logo"
-          width={40}
-          height={40}
-          loading="lazy"
-          quality={100}
-          style={{
-            objectFit: "cover",
-          }}
-        />
+      <Image
+  src="/images/logo.svg"
+  alt="logo"
+  width={40}
+  height={40}
+  loading="lazy"
+  quality={100}
+  style={{
+    objectFit: "cover",
+  }}
+/>
+
+        
         <h2
           className={`${nasalization.className} text-3xl text-white tracking-wide`}
         >
