@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "A.S.Babji Rao",
-      url: "https://babji.vercel.app",
+      url: "https://ansorn-portfolio.vercel.app/",
     },
   ],
   creator: "A.S.Babji Rao",
@@ -24,21 +24,21 @@ export const metadata: Metadata = {
     title: "A.S.Babji Rao",
     description:
       "A digital samurai forging powerful web experiences. Focused on speed, elegance, and precision through code.",
-    images: [{ url: "/images/thumbnail.png" }],
+    images: [{ url: "/logo.svg" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "A.S.Babji Rao",
     description:
       "A digital samurai forging powerful web experiences. Focused on speed and precision through code.",
-    images: [{ url: "/images/thumbnail.png" }],
+    images: [{ url: "/logo.svg" }],
     creator: "@a.s.babji.rao",
   },
   alternates: {
     canonical: "/",
   },
-  icons: "/images/logo.svg",
-  metadataBase: new URL("https://babji.vercel.app"),
+  icons: "/logo.svg",
+  metadataBase: new URL("https://ansorn-portfolio.vercel.app/"),
 };
 
 export default function RootLayout({
