@@ -15,7 +15,7 @@ export const EXPERIENCE_DATA = [
     description: "Built public-impact web apps and prototypes for award-winning Enactus projects.",
     company: "Enactus KIIT",
     technologies: ["React", "Next.js", "Tailwind CSS"],
-    url: "https://enactus-kiit.in", // ✅ Add this
+    url: "https://enactuskiit.in/", // ✅ Add this
   },
   {
     role: "Cadet",
@@ -23,6 +23,6 @@ export const EXPERIENCE_DATA = [
     description: "Led and coordinated over 250 cadets, applying strategic planning, systems thinking, and operational leadership—akin to managing a large-scale tech team or agile development squad.",
     company: "KIIT NCC",
     technologies: ["Leadership", "Discipline", "Teamwork"],
-    // url is optional — omit or leave undefined
+    url: "https://indiancc.mygov.in/",
   },
 ];
