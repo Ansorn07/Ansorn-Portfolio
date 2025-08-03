@@ -1,0 +1,36 @@
+import sys
+
+# It's common for these problems to have a first line with the number of test cases (T).
+# The problem description mentions T, but the sample doesn't show it.
+# This code handles reading each line as a separate test case.
+
+lines = sys.stdin.readlines()
+for line in lines:
+    # Skip any empty lines that might be read
+    if not line.strip():
+        continue
+
+    # Read the energies for Anuj (x), Pankaj (y), and Amrinder (z)
+    x, y, z = map(int, line.strip().split())
+    
+    anuj_goals = 0
+    pankaj_goals = 0
+    
+    # The game continues as long as the goalkeeper's energy is greater than 1
+    while z > 1:
+        # Check if Anuj can score. He is "favoured", so he always gets the first chance.
+        # A player must have energy greater than 0 to shoot.
+        if x > 0 and x % z == 0:
+            anuj_goals += 1
+            x -= 1  # Anuj's energy decreases by 1 after a goal
+        
+        # If Anuj cannot score, check if Pankaj can score.
+        elif y > 0 and y % z == 0:
+            pankaj_goals += 1
+            y -= 1  # Pankaj's energy decreases by 1 after a goal
+            
+        # If neither player can score, it's considered a "save".
+        else:
+            z -= 1  # Goalkeeper's energy decreases by 1 only on a save
+            
+    print(anuj_goals, pankaj_goals)

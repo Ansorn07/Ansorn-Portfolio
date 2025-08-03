@@ -20,7 +20,7 @@ export const PROJECT_DATA = [
     description:
       "An AI-powered mental health assistant using Gemini AI and Zerepy agents. Supports encrypted, smart-contract-secured therapy sessions, emotional state tracking, NFT progress logs, and a sonic token reward system.",
     github_link: "https://github.com/Ansorn07/Aethera-One",
-    demo: "", // Add once deployed
+    demo: "https://aethera-one-frontend-7glz.vercel.app/",
     tech: [
       "Gemini API",
       "Zerepy Agents",
